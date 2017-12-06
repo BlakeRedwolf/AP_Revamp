@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>
       Trade Show Items Imprinted with your Name, Logo or Message
     </title>
@@ -17,6 +18,9 @@
     <style type="text/css">
     
     </style>
+    <!-- Bootstrap v4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
     <link href="style.css" rel="stylesheet" type="text/css">
     <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -34,31 +38,105 @@
     <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css">
     <script src="js/custom.js" type="text/javascript">
     </script>
-    <script src="js/jquery-ui-1.9.2.custom.min.js" type="text/javascript">
-    </script>
+
+    <!-- <script src="js/jquery-ui-1.9.2.custom.min.js" type="text/javascript">
+    </script> -->
     <script src="js/jquery.colorbox-min.js" type="text/javascript">
     </script>
     <script src="js/jquery.validate.pack.js" type="text/javascript">
     </script>
     <script src="js/jquery.validate.creditcard2.pack-1.0.1.js" type="text/javascript">
     </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
-      <div class="headline">
+    <div class="row text-center">
+      <div class="headline col-sm-12 col-md-9 offset-md-2">
         <h1>
           Promotional Products, Imprinted Items, Logo Advertising Products
         </h1>
       </div>
-      <div class="header">
-        <div id="phone">
+    </div>
+      
+    <div class="row">
+      <div class="col-md-12">
+
+        <nav class="navbar navbar-light bg-light justify-content-between">
+         <a class="navbar-brand" href="index.php">
+           <img alt="Insert Logo Here" class="aplogo" height="90" id="Insert_logo" name="Insert_logo" src="images/ap-logo.png" width="280">
+          </a>
+         <!-- <div class="mr-auto nav-justified">
+            <div id="phone">
           <img alt="call (888) 237-4929" height="25" src="images/call.png" width="200">
-        </div><a href="index.php"><img alt="Insert Logo Here" class="aplogo" height="90" id="Insert_logo" name="Insert_logo" src="images/ap-logo.png" width="280"></a>
-        <div id="search-div">
-          <form action="q.php" id="search-form" method="get" name="search-form">
-            <input id="searchbox" name="keywords" placeholder="Search Promotional Products" value="">
-          </form><input id="search-button" name="search-button" type="button">
-        </div>
+          </div>
+          </div> -->
+          <form action="q.php" id="search-form" method="get" name="search-form" class="form-inline">
+            <input id="searchbox" name="keywords" class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search Promotional Products" value="" aria-label="Search">
+            <button id="search-btn" class="btn btn-danger btn-sm my-2 my-sm-0" type="submit">SEARCH</button>
+          </form>
+          
+          
+        </nav>
+
+
+        
+          <!-- <div id="search-div">
+            <form action="q.php" id="search-form" method="get" name="search-form">
+              <input id="searchbox" name="keywords" placeholder="Search Promotional Products" value="">
+            </form><input id="search-button" name="search-button" type="button">
+          </div> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <nav class="navbar navbar-expand-md  rounded mb-3">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="index-navbar">
+            <ul class="navbar-nav nav-pills text-md-center mr-auto nav-justified w-100" id="index-nav-list">
+              <li class="first-nav nav-item active">
+                <a class="nav-link" href="index.php">HOME <span class="sr-only">(current)</span></a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="deals.php">SPECIALS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.php">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.php">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="view-cart.php">VIEW CART</a>
+              </li>
+              <li class="nav-item last-nav">
+                <a class="nav-link" href="search-advanced.php">SEARCH</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="header">
         <div class="menu">
           <ul id="menu">
             <li class="first-nav">
@@ -82,6 +160,10 @@
           </ul><br class="clearfloat">
         </div>
       </div>
+      </div>
+    </div>
+      
+
       <div id="below-fold">
         <div class="sidebar1">
           <ul id="left-nav">
@@ -431,6 +513,7 @@
           </div><!-- end .content -->
         </div>
       </div>
+
       <div class="footer">
         <p>
           <a href="index.php">HOME</a> | <a href="best-sellers.php">BEST SELLERS</a> | <a href="about.php">ABOUT US</a> | <a href="faq.php">FAQ</a> | <a href="view-cart.php">VIEW CART</a> | <a href="search-adpizazz.php">SEARCH</a> | <a href="Site-Map.php">SITE MAP</a>
