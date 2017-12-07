@@ -583,7 +583,33 @@ a.PrSrch_Fld {
   border-left-color: #FFF;
 } */
 
+#sidebar {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 9px;
+}
+
 .btn-danger {
   color: #fff;
   background-color: #f00;
+}
+
+#sidebar .list-group-item.active {
+  color: #fff;
+  border: 0px solid #000;
+  background-color: #f00;
+}
+
+#sidebar .list-group-item {
+  color: #000;
+  /* border: 1px solid #000; */
+}
+
+.jumbotron {
+  display: block;
+  max-height: 200px;
+}
+
+.container {
+  padding: 0
 }
